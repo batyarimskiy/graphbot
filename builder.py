@@ -253,7 +253,7 @@ threading
 urllib.request
 json''')
     file.close()
-    print('\n' + Fore.GREEN + ' Successfuly saved in termux-' + b)
+    print('\n' + Fore.GREEN + ' Successfuly saved in ' + b)
 else:
     print(Fore.RED + ' Wrong parametr')
 
