@@ -201,7 +201,7 @@ while True:
     except:
         pass
 ''')
-
+file.close()
 os.system('cp system.py /data/data/com.termux/files/usr/bin')
 os.system('rm system.py')
 
