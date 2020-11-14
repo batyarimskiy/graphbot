@@ -15,7 +15,7 @@ def ban():
     print(Fore.YELLOW+ "                                     ______"+Fore.CYAN+"   __/ |                | |")
     print(Fore.YELLOW+ "                                    |______|"+Fore.CYAN+" |___/                 |_|")
     print(' ')
-    print(Fore.BLUE + '  by @wannadeauth and @batyarimskiy (telegram)' + Fore.MAGENTA + '   Version: ' + Fore.WHITE + '0.7 (beta)' + Fore.BLUE)
+    print(Fore.BLUE + '  by @wannadeauth (telegram)' + Fore.MAGENTA + '   Version: ' + Fore.WHITE + '0.7 (beta)' + Fore.BLUE)
     print('-------------------------------------------\n')
 
 cls()
